@@ -10,7 +10,7 @@ export default function LandingPage() {
                 Maria Waslick
             </Typography>
             <Typography variant="h2" gutterBottom component="div">
-                full-stack web development
+                Full-Stack Web Development
             </Typography>
         </Box>
     )

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import LandingPage from '../LandingPage/LandingPage';
+import SkillsPage from '../SkillsPage/SkillsPage';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -51,18 +52,22 @@ export default function Navbar() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} centered>
           <Tab label="Home" {...a11yProps(0)} />
-          <Tab label="About" {...a11yProps(1)} />
+          <Tab label="Skills" {...a11yProps(1)} />
           <Tab label="Portfolio" {...a11yProps(2)} />
+          <Tab label="Contact" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         <LandingPage/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <SkillsPage/>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        Item four
       </TabPanel>
     </Box>
   );
